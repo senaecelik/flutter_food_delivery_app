@@ -9,7 +9,12 @@ Figmadan bir UI seçip, Flutter üzerinde kodluyorum. Aynı zamanda Youtube da p
 - [Youtube - Speedcode](https://www.youtube.com/watch?v=Sr34icpO0HU&t=60s&ab_channel=Sena%C3%87elik)
 
 ## İlerleme sürecim
-- **20.04.22**
+- **20.04.22 - Splash Screen**
 
 
 <img align="center"  src="https://user-images.githubusercontent.com/48855691/164268634-686a6de0-9b85-43cb-bde2-a63a95f0bf39.png">
+
+- **21.04.22 - Login & Sign Up Screen**
+<img align="center"  src="https://user-images.githubusercontent.com/48855691/164542913-bc2bfe76-1dd7-4341-984a-9548982a69c9.png">
+<img align="center"  src="https://user-images.githubusercontent.com/48855691/164542915-cd9856a4-aca4-4934-afe8-742c228e1789.png">
+
