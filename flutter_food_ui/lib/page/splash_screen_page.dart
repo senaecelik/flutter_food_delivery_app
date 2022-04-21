@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_ui/constant/color_constant.dart';
 import 'package:flutter_food_ui/constant/edge_instent_constant.dart';
+import 'package:flutter_food_ui/constant/string.dart';
 import 'package:flutter_food_ui/page/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../widget/button_companent.dart';
@@ -10,10 +11,6 @@ class SplashScreenPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String titleText = "Food for\nEveryone";
-    String logoImage = "assets/1.png";
-    String splashImage = "assets/2.png";
-
     return Scaffold(
       backgroundColor: ColorConstant.ogreOdor,
       body: Padding(
@@ -22,12 +19,12 @@ class SplashScreenPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _logoWidget(logoImage: logoImage),
-            _titleWidget(text: titleText),
+            _logoWidget(logoImage: StringConstant.logoImage),
+            _titleWidget(text: StringConstant.titleText),
             const SizedBox(
               height: 10,
             ),
-            _splashImage(splashImage: splashImage),
+            _splashImage(splashImage: StringConstant.splashImage),
             SizedBox(
               height: 20,
             ),

@@ -10,4 +10,9 @@ class EdgeInsentsConstant {
 
   static EdgeInsets buttonPadding =
       EdgeInsets.symmetric(horizontal: 120, vertical: 25);
+
+  static EdgeInsets loginContainer =
+      EdgeInsets.only(left: 50, top: 128, right: 50);
+
+   static EdgeInsets tabBarViewPadding=  EdgeInsets.symmetric(horizontal: 50, vertical: 64);
 }
