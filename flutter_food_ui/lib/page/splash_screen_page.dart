@@ -1,8 +1,10 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_food_ui/constant/color_constant.dart';
 import 'package:flutter_food_ui/constant/edge_instent_constant.dart';
 import 'package:flutter_food_ui/constant/string.dart';
-import 'package:flutter_food_ui/page/login_page.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import '../widget/button_companent.dart';
 
@@ -19,16 +21,16 @@ class SplashScreenPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _logoWidget(logoImage: StringConstant.logoImage),
-            _titleWidget(text: StringConstant.titleText),
+            _LogoWidget(logoImage: StringConstant.logoImage),
+            _TitleWidget(text: StringConstant.titleText),
             const SizedBox(
               height: 10,
             ),
-            _splashImage(splashImage: StringConstant.splashImage),
-            SizedBox(
+            _SplashImage(splashImage: StringConstant.splashImage),
+            const SizedBox(
               height: 20,
             ),
-            ButtonWidget(page: LoginPage())
+            ButtonWidget()
           ],
         ),
       ),
@@ -36,8 +38,8 @@ class SplashScreenPage extends StatelessWidget {
   }
 }
 
-class _splashImage extends StatelessWidget {
-  const _splashImage({
+class _SplashImage extends StatelessWidget {
+  const _SplashImage({
     Key? key,
     required this.splashImage,
   }) : super(key: key);
@@ -50,8 +52,8 @@ class _splashImage extends StatelessWidget {
   }
 }
 
-class _logoWidget extends StatelessWidget {
-  const _logoWidget({
+class _LogoWidget extends StatelessWidget {
+  const _LogoWidget({
     Key? key,
     required this.logoImage,
   }) : super(key: key);
@@ -75,9 +77,9 @@ class _logoWidget extends StatelessWidget {
   }
 }
 
-class _titleWidget extends StatelessWidget {
+class _TitleWidget extends StatelessWidget {
   String text;
-  _titleWidget({Key? key, required this.text}) : super(key: key);
+  _TitleWidget({Key? key, required this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

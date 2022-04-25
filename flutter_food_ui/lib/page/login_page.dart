@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_food_ui/constant/color_constant.dart';
 import 'package:flutter_food_ui/constant/edge_instent_constant.dart';
 import 'package:flutter_food_ui/constant/radius_constant.dart';
+import 'package:flutter_food_ui/constant/router_constant.dart';
 import 'package:flutter_food_ui/constant/string.dart';
 import 'package:flutter_food_ui/constant/text_style_constant.dart';
 import '../widget/orange_button_component.dart';
@@ -17,16 +18,16 @@ class LoginPage extends StatelessWidget {
       child: Scaffold(
           body: SingleChildScrollView(
         child: Column(children: const [
-           _loginTopContainer(),
-           _bodyTabBarContainer(),
+          _LoginTopContainer(),
+          _BodyTabBarContainer(),
         ]),
       )),
     );
   }
 }
 
-class _bodyTabBarContainer extends StatelessWidget {
-  const _bodyTabBarContainer({
+class _BodyTabBarContainer extends StatelessWidget {
+  const _BodyTabBarContainer({
     Key? key,
   }) : super(key: key);
 
@@ -41,25 +42,28 @@ class _bodyTabBarContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const _emailAdress(),
+              const _EmailAdress(),
               const SizedBox(
                 height: 10,
               ),
-              const _password(),
+              const _Password(),
               const SizedBox(
                 height: 10,
               ),
-              const _forgotPassword(),
+              const _ForgotPassword(),
               OrangeButtonWidget(
                 text: StringConstant.login,
+                page: RouteConstant.homeScreenRoute,
               )
             ],
           ),
           Column(
             children: [
-              const _emailAdress(),
-              const _password(),
-              OrangeButtonWidget(text: StringConstant.signUp)
+              const _EmailAdress(),
+              const _Password(),
+              OrangeButtonWidget(
+                  text: StringConstant.signUp,
+                  page: RouteConstant.homeScreenRoute)
             ],
           )
         ],
@@ -68,8 +72,8 @@ class _bodyTabBarContainer extends StatelessWidget {
   }
 }
 
-class _forgotPassword extends StatelessWidget {
-  const _forgotPassword({
+class _ForgotPassword extends StatelessWidget {
+  const _ForgotPassword({
     Key? key,
   }) : super(key: key);
 
@@ -85,8 +89,8 @@ class _forgotPassword extends StatelessWidget {
   }
 }
 
-class _password extends StatelessWidget {
-  const _password({
+class _Password extends StatelessWidget {
+  const _Password({
     Key? key,
   }) : super(key: key);
 
@@ -98,8 +102,8 @@ class _password extends StatelessWidget {
   }
 }
 
-class _emailAdress extends StatelessWidget {
-  const _emailAdress({
+class _EmailAdress extends StatelessWidget {
+  const _EmailAdress({
     Key? key,
   }) : super(key: key);
 
@@ -111,8 +115,8 @@ class _emailAdress extends StatelessWidget {
   }
 }
 
-class _loginTopContainer extends StatelessWidget {
-  const _loginTopContainer({
+class _LoginTopContainer extends StatelessWidget {
+  const _LoginTopContainer({
     Key? key,
   }) : super(key: key);
 

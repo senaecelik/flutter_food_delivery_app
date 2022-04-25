@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_food_ui/page/splash_screen_page.dart';
+import 'package:flutter_food_ui/constant/router_constant.dart';
+import 'route_generator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(),
-        home: const SplashScreenPage());
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      initialRoute: RouteConstant.splashScreenRoute,
+      onGenerateRoute: RouterGenerator.generateRoute,
+      theme: ThemeData(),
+    );
   }
 }
