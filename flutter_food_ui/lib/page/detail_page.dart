@@ -7,7 +7,6 @@ import 'package:flutter_food_ui/constant/edge_instent_constant.dart';
 import 'package:flutter_food_ui/constant/router_constant.dart';
 import 'package:flutter_food_ui/constant/string.dart';
 import 'package:flutter_food_ui/widget/orange_button_component.dart';
-
 import '../constant/text_style_constant.dart';
 
 class DetailPage extends StatelessWidget {
@@ -45,7 +44,7 @@ class DetailPage extends StatelessWidget {
                     detailTextDesc: StringConstant.returnPolicyDetail),
                 OrangeButtonWidget(
                     text: StringConstant.addToCard,
-                    page: RouteConstant.homeScreenRoute)
+                    page: RouteConstant.addCardPageRoute)
               ],
             ),
           ),

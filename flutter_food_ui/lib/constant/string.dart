@@ -25,6 +25,7 @@ class StringConstant {
 
 //Food 2
   static var foodSpicy = "Spicy fish\nsauce";
+  static var foodSpicyy = "Spicy fish sauce";
   static var foodprice2 = "N2,300.99";
   static var foodSpicyImage = "assets/food2.png";
 
@@ -38,4 +39,9 @@ class StringConstant {
       "All our foods are double checked before leaving our stores so by any case you found a broken food please contact our hotline immediately.";
 
   static var addToCard = "Add to card";
+
+  //Cart Page
+  static var cart = "Cart";
+  static var cartHandImage = "assets/hand.png";
+  static var cartSubTitle = "swipe on an item to delete";
 }
